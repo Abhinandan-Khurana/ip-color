@@ -22,3 +22,4 @@ Unleash the power of color! This nifty tool brilliantly highlights your interfac
 - sudo cp ip-color.py /usr/local/bin
 - Done✅
 
+**Note:** You can get the tool binary under the dist folder.
