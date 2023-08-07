@@ -18,8 +18,8 @@ Unleash the power of color! This nifty tool brilliantly highlights your interfac
 
 ### For using it as a binary globally in you system, do this -
 
-- sudo chmod +x ip-color.py
-- sudo cp ip-color.py /usr/local/bin
+- sudo chmod +x ./dist/ip-color
+- sudo cp ./dist/ip-color /usr/local/bin
 - Done✅
 
 **Note:** You can get the tool binary under the dist folder.
