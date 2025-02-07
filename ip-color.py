@@ -19,15 +19,12 @@ except subprocess.CalledProcessError as e:
 for line in ip_output.splitlines():
     if ":" in line and "link/" not in line:
         interface = line.split(":")[1].strip()
-        print(line)
-        print(f"\t\t{COLOR_INTERFACE}{interface}{COLOR_RESET}")
+        print(line.replace(interface, f"{COLOR_INTERFACE}{interface}{COLOR_RESET}"))
     elif "inet " in line:
         ipv4 = line.split()[1]
-        print(line)
-        print(f"\t{COLOR_IPV4}{ipv4}{COLOR_RESET}")
+        print(line.replace(ipv4, f"{COLOR_IPV4}{ipv4}{COLOR_RESET}"))
     elif "link/ether" in line:
         mac = line.split()[1]
-        print(line)
-        print(f"\t\t{COLOR_MAC}{mac}{COLOR_RESET}")
+        print(line.replace(mac, f"{COLOR_MAC}{mac}{COLOR_RESET}"))
     else:
         print(line)
